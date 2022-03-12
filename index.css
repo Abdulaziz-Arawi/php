@@ -1,0 +1,107 @@
+:root{
+    --mainColor: #5c5470;
+    --secondColor: #2c2836;
+    --shadowColor: #ccc;
+    --borderColor: #777;
+
+
+
+}
+
+/*  Start Global Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    margin: 0;
+    height: auto;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width:992) {
+    .container {
+        width: 970;
+    }
+}
+
+
+/* Large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+header{
+
+    padding: 13px 0px 10px 0px;
+
+}
+
+header .container{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+
+header .main-nav{
+
+    display: flex;
+
+}
+
+header .main-nav > li > a  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 73px;
+    position: relative;
+    color: var(--mainColor);
+    padding: 0 15px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    overflow: hidden;
+}
+
+header a{
+
+    color: var(--mainColor);
+
+}
